@@ -10,6 +10,7 @@ describe('parseDuration', () => {
         expect((0, parseDuration_1.default)('PT2M30S')).toEqual(150);
         expect((0, parseDuration_1.default)('PT1H30M30S')).toEqual(5430);
         expect((0, parseDuration_1.default)('PT1H30M30.1S')).toEqual(5430.1);
+        expect((0, parseDuration_1.default)('P1Y2M10DT2H30M.1S')).toEqual("error month is present");
     });
 });
 //# sourceMappingURL=parseDuration.test.js.map
